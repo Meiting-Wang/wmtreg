@@ -1,0 +1,9 @@
+v 1.0.0
+d 'WMTREG': wmtreg
+d 
+d output regression result to Word, LaTeX, Stata interface.
+d 
+d Distribution-Date:   20200427
+d License: MIT
+d 
+F wmtreg.ado
