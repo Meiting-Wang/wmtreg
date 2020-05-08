@@ -1,7 +1,7 @@
-* Feather: output regression result to Stata interface, Word and LaTeX
+* Description: output regression result to Stata interface, Word and LaTeX
 * Author: Meiting Wang, Master, School of Economics, South-Central University for Nationalities
-* Email: 2017110097@mail.scuec.edu.cn
-* Created on Oct 25th, 2019
+* Email: wangmeiting92@gmail.com
+* Created on May 8th, 2020
 
 
 program define wmtreg
@@ -12,38 +12,6 @@ syntax [anything] [using/] [, ///
 	Bfmt(string) BETA BETAfmt(string) SE SEfmt(string) T Tfmt(string) P Pfmt(string) ONLYB ///
 	STARAUX NOSTAR INDicate(string asis) Scalars(string) NONUMbers NOMTitles ///
 	MTitles(string asis) TItle(string) MGroups(string asis) Alignment(string) PAGE(string)]
-/*
-optional illustration:
-1. anything: input the stored estimation names.
-2. drop(): not report the specific variables.
-3. keep(): only report the specific cariables.
-4. varlabels(): set the displayed label of variable
-5. b() or beta(): report the raw coefficient or the standardized coefficient.
-6. se() t() p() or onlyb: only one of these four options can exist, se() as the default.
-7. staraux: staraux and one of se() t() p() should exist at the same time, then
-the stars will be marked on the se t or p.
-8. nostar: not report the stars.
-9. indicate(): not reporting the coefficient of variables, just show whether these variables exist.
-10. scalars(): r2 ar2 pr2 aic bic F ll N are permitted, r2 N as the default. all of 
-these scalars can be set the format like that: r2(%9.3f) or r2(5).
-11. nonumbers: not report the serial number of each regression or estimation.
-12. nomtitles: not report the title of each regression or estimation.
-13. mtitles(): customize the title of each regression or estimation, but if you
-input mtitles(depvars), the dependent variable of each regression will be used as 
-the name of each regression model and if you input mtitles(esn), then the stored name 
-of each regression result will be used as the name of each regression model. 
-mtitles(depvars) as the default.
-14. title(): set the title for the reported table, regression result as the default.
-15. mgroups(): set the group names for these estimations. for instance, mg(A B 2 2)
-represent the first two regressions will be assigned to group A, and the last two 
-regressions will be assigned to group B.
-16. alignment(): only used in the LaTeX output, set the column format of the LaTeX
-table, but it will not impact the column format in the Stata output table, dot as 
-the default.
-17. page(): only used in the LaTeX output,set the extra package for the LaTeX code.
-please don't need to add the package of booktabs array dcolumn, because the code 
-will automatic process these with the option of alignment().
-*/
 
 
 *--------设置默认格式------------
@@ -499,9 +467,14 @@ if `"`mgroups'"' != "" {
 }
 
 *构建esttab中alignment()和page()内部的语句(LaTeX输出专属)
+if "`alignment'" == "" {
+	local alignment "math"
+} //设置默认下的alignment
+
 if "`page'" != "" {
 	local page ",`page'"
 }
+
 if "`alignment'" == "math" {
 	local page "array`page'"
 	local alignment ">{$}c<{$}"
