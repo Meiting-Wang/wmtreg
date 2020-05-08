@@ -2,7 +2,7 @@
 
 {* -----------------------------title------------------------------------ *}{...}
 {p 0 17 2}
-{bf:[W-4] wmtreg} {hline 2} output regression result to Stata interface, Word as well as LaTeX.. The source code can be gained in {browse "https://github.com/Meiting-Wang/wmtreg":github}.
+{bf:[W-4] wmtreg} {hline 2} output regression result to Stata interface, Word as well as LaTeX. The source code can be gained in {browse "https://github.com/Meiting-Wang/wmtreg":github}.
 
 
 {* -----------------------------Syntax------------------------------------ *}{...}
