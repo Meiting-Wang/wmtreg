@@ -121,7 +121,7 @@ wmtreg m? using Myfile.tex, replace //将回归结果导出至LaTeX
 wmtreg m? using Myfile.tex, replace a(dot) //将回归结果导出至LaTeX，并将其列表格设置为小数点对齐
 ```
 
-> 以上所有实例都可以在`help wmtreg`中直接运行。
+> 以上所有实例都可以在`help wmtreg`中直接运行。  
 > ![](https://imgkr.cn-bj.ufileos.com/ecf5a216-72f5-43a1-bc44-7d084b23cf57.png)
 
 ## 五、输出效果展示
