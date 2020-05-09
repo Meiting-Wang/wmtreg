@@ -18,7 +18,7 @@ where the subcommands can be :
 {p2col :{it:subcommand}}Description{p_end}
 {p2line}
 {p2col :{opt est_store_names}}Enter the name of the stored regression result, supporting wildcards(*?). Import all stored regression results by default{p_end}
-{p2col :{opt {help using}}}output the result to Word with .rtf file or LaTeX with .tex file{p_end}
+{p2col :{opt {help using}}}Output the result to Word with .rtf file or LaTeX with .tex file{p_end}
 {p2line}
 {p2colreset}{...}
 
