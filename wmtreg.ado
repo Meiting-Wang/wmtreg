@@ -1,7 +1,7 @@
 * Description: output regression result to Stata interface, Word and LaTeX
 * Author: Meiting Wang, Master, School of Economics, South-Central University for Nationalities
 * Email: wangmeiting92@gmail.com
-* Created on May 8th, 2020
+* Created on May 8, 2020
 
 
 program define wmtreg
