@@ -122,7 +122,7 @@ wmtreg m? using Myfile.tex, replace a(dot) //将回归结果导出至LaTeX，并
 ```
 
 > 以上所有实例都可以在`help wmtreg`中直接运行。  
-> ![](https://imgkr.cn-bj.ufileos.com/ecf5a216-72f5-43a1-bc44-7d084b23cf57.png)
+> ![image](https://user-images.githubusercontent.com/42256486/81492187-81fa4b00-92c8-11ea-874f-6026a289a382.png)
 
 ## 五、输出效果展示
 
@@ -198,7 +198,7 @@ Standard errors in parentheses
 wmtreg m? using Myfile.rtf, replace
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/eea2befb-9a07-4b58-ba05-aa68cd4348d8.png)
+![image](https://user-images.githubusercontent.com/42256486/81492189-86266880-92c8-11ea-9cba-b8533511f275.png)
 
 - **LaTeX**
 
@@ -206,18 +206,18 @@ wmtreg m? using Myfile.rtf, replace
 wmtreg m? using Myfile.tex, replace
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/6c006b79-e12d-4d65-88a7-01c5f2e4bc16.png)
+![image](https://user-images.githubusercontent.com/42256486/81492192-89b9ef80-92c8-11ea-8b43-ff02238fd118.png)
 
 ```stata
 wmtreg m? using Myfile.tex, replace mg(Group1 Group2 2 2)
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/bc4fe50a-bb67-4373-8f37-2173999169b1.png)
+![image](https://user-images.githubusercontent.com/42256486/81492195-8e7ea380-92c8-11ea-8c9e-a8f84e3acd66.png)
 
 ```stata
 wmtreg m? using Myfile.tex, replace a(dot)
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/e5739fd8-5f5d-4300-8ffd-13daaeae9052.png)
+![image](https://user-images.githubusercontent.com/42256486/81492198-92122a80-92c8-11ea-9411-efaa0da76410.png)
 
 > 在将结果输出至 Word 或 LaTeX 时，Stata 界面上也会呈现对应的结果，以方便查看。
