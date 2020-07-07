@@ -1,10 +1,9 @@
-v v1.0.0
-d 'WMTREG': wmtreg
-d 
-d Output regression result to Stata interface, Word as well as LaTeX.
-d 
-d Distribution-Date:   20200509
-d License: MIT
-d 
-F wmtreg.ado
-F wmtreg.sthlp
+v 1.0.0
+d wmtreg. Output regression result to Stata interface, Word as well as LaTeX
+d Meiting Wang
+d Institute for Economic and Social Research, Jinan University
+d Guangzhou, China
+d wangmeiting92@gmail.com
+
+f wmtreg.ado
+f wmtreg.sthlp

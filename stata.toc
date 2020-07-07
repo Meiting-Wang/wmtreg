@@ -1,8 +1,7 @@
-v v1.0.0
-d Materials by Meiting Wang
-d South-Central University for Nationalities
+v 1.0.0
+d Meiting Wang
+d Institute for Economic and Social Research, Jinan University
+d Guangzhou, China
 d wangmeiting92@gmail.com
 
-d 'wmtreg': Output regression result to Stata interface, Word as well as LaTeX.
-
-p wmtreg
+p wmtreg - Output regression result to Stata interface, Word as well as LaTeX
